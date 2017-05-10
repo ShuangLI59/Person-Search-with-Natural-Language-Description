@@ -50,3 +50,10 @@ To run this code, the following packages must be installed:
 
 2. Run train.lua.
 
+## Citation
+    @article{li2017person,
+      title={Person search with natural language description},
+      author={Li, Shuang and Xiao, Tong and Li, Hongsheng and Zhou, Bolei and Yue, Dayu and Wang, Xiaogang},
+      journal={arXiv preprint arXiv:1702.05729},
+      year={2017}
+    }
