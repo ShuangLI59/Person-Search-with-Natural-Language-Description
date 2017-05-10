@@ -276,7 +276,6 @@ local loss_history = {}
 local val_loss_history = {}
 local acc_history = {}
 local val_acc_history = {}
-local best_score
 local best_score_ACC
 top1 = 0
 top1_val = 0
@@ -303,7 +302,6 @@ while true do
 
     ---- save checkpoint
     local checkpoint_path = string.format('%s/lstm%s_rnn%s_epoch%.2f_valloss%.4f_valacc%.4f', opt.checkpoint_path, opt.num_layers, opt.rnn_size, epoch, val_loss, top1_val)
-    local checkpoint_path_best = string.format('%s/lstm%s_rnn%s_best', opt.checkpoint_path, opt.num_layers, opt.rnn_size)
     local checkpoint_path_best_ACC = string.format('%s/lstm%s_rnn%s_bestACC', opt.checkpoint_path, opt.num_layers, opt.rnn_size)
     ---- write a (thin) json report
     local checkpoint = {}
@@ -318,23 +316,6 @@ while true do
     print('wrote json checkpoint to ' .. checkpoint_path .. '.json')
 
     -- write the full model checkpoint as well if we did better than ever
-    local current_score = -val_loss
-    if best_score == nil or current_score > best_score then
-      best_score = current_score
-      if iter > 0 then -- dont save on very first iteration
-        -- include the protos (which have weights) and save to file
-        local save_protos = {}
-        save_protos.lm = thin_lm -- these are shared clones, and point to correct param storage
-        save_protos.cnn = thin_cnn
-        checkpoint.protos = save_protos
-        -- also include the vocabulary mapping so that we can use the checkpoint 
-        -- alone to run on arbitrary images without the data loader
-        checkpoint.vocab = loader:getVocab()
-        torch.save(checkpoint_path_best .. '.t7', checkpoint)
-        print('wrote checkpoint to ' .. checkpoint_path_best .. '.t7')
-      end
-    end
-
     local current_score = top1_val
     if best_score_ACC == nil or current_score > best_score_ACC then
       best_score_ACC = current_score
