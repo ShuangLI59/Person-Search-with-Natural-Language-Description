@@ -10,8 +10,8 @@ To run this code, the following packages must be installed:
 
 - hdf5 (and the [torch-hdf5](https://github.com/deepmind/torch-hdf5/) package)
 - cudnn
-- qlua (for displaying results)
-- [matio](https://github.com/soumith/matio-ffi.torch): to save predictions in Matlab's `.mat` file.
+- [cjson](https://www.kyne.com.au/~mark/software/lua-cjson-manual.html)
+- [loadcaffe](https://github.com/szagoruyko/loadcaffe)
 
 
 ## Data Preparation
