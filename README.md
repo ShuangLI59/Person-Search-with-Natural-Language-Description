@@ -16,7 +16,7 @@ To run this code, the following packages must be installed:
 
 ## Data Preparation
 
-1. Request the dataset from sli [at] ee.cuhk.edu.hk or xiaotong [at] ee.cuhk.edu.hk (academic only).
+1. Request the dataset from lishuang[at]mit.edu or tong.xiao.work[at]gmail.com (academic only).
 
 2. Save data into a json file that contains a list of image paths, person ID, and raw captions for each image, of the form:
 
