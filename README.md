@@ -24,7 +24,7 @@ To run this code, the following packages must be installed:
   [{"split": "train", "captions": ["A woman is wearing a gray shirt, a pair of brown pants and a pair of shoes.", "She is wearing a dark grey top and light colored pants."], "file_path": "train_query/p11600_s14885.jpg", "id": 11003}]
   ```
 
-  You can also directly download the [json file](https://drive.google.com/open?id=0B-GOvBat1maOUVZIRnhHN2oyQUE) and save it to "data/reid_raw.json"
+  You can also directly download the [json file](https://drive.google.com/open?id=0B-GOvBat1maObWN1eDV6cFNYV2M) and save it to "data/reid_raw.json"
   
 3. Run prepro_data.py as follows:
    
