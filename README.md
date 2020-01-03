@@ -34,7 +34,7 @@ To run this code, the following packages must be installed:
 
 ## Testing
 
-1. Download the pretrained model from [snapshot](https://drive.google.com/open?id=0B-GOvBat1maOSUllWW9OSDkwcEE).
+1. Download the pretrained model from [snapshot](https://drive.google.com/open?id=0B-GOvBat1maOLURaUm1pckRPQ2M).
 
 2. Run Retrieval.lua. The result should be around:
    
@@ -46,7 +46,7 @@ To run this code, the following packages must be installed:
 
 ## Training
 
-1. Download the VGG-16 network pre-trained model from [model](https://drive.google.com/open?id=0B-GOvBat1maOLWh1Y09Tamw4M2M).
+1. Download the VGG-16 network pre-trained model from [model](https://drive.google.com/open?id=0B-GOvBat1maOVjgwSGtQWWZyRlE).
 
 2. Run train.lua.
 
