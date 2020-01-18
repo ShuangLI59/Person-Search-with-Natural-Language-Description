@@ -39,8 +39,8 @@ To run this code, the following packages must be installed:
 2. Run Retrieval.lua. The result should be around:
    
    ```Shell
-   top- 1 = 19.71%
-   top- 5 = 43.20%
+   top-1 = 19.71%
+   top-5 = 43.20%
    top-10 = 55.24%
    ```
 
