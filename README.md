@@ -16,7 +16,8 @@ To run this code, the following packages must be installed:
 
 ## Data Preparation
 
-1. **Request the dataset from lishuang[at]mit.edu** or **tong.xiao.work[at]gmail.com (academic only). Due to licensing issues, please use your university email to send the email.**
+1. **Request the dataset from lishuang[at]mit.edu** or **tong.xiao.work[at]gmail.com (academic only).**
+  Due to licensing issues, please send us your request using your university email. 
 
 2. Save data into a json file that contains a list of image paths, person ID, and raw captions for each image, of the form:
 
