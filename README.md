@@ -47,7 +47,7 @@ To run this code, the following packages must be installed:
 
 ## Training
 
-1. Download the VGG-16 network pre-trained model from [model](https://drive.google.com/open?id=0B-GOvBat1maOVjgwSGtQWWZyRlE).
+1. Download the VGG-16 network pre-trained model from [model](https://drive.google.com/file/d/0B-GOvBat1maOVjgwSGtQWWZyRlE/view?usp=sharing&resourcekey=0-6g4DsRU02z-f60ug8WgxjA).
 
 2. Run train.lua.
 
